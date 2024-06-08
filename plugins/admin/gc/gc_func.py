@@ -1,71 +1,57 @@
-#RANDOM GEN FUNCTION
-def gcgenfunc(len=4):
-  import string
-  import random
-  chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-  return ''.join(random.choice(chars) for _ in range(len))
-#insert registration data
+import string
+import random
+import sqlite3
+
+# RANDOM GEN FUNCTION
+def gcgenfunc(length=4):
+    chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    return ''.join(random.choice(chars) for _ in range(length))
+
+# Insert registration data
 def insert_pm(gc):
-  import sqlite3
-  conn = sqlite3.connect('plugins/xcc_db/giftcard.db')
-  db = conn.cursor()
-  db.execute(f"INSERT INTO gc VALUES ('{gc}','ACTIVE','PREMIUM')")
-  conn.commit()
-  conn.close()
+    with sqlite3.connect('plugins/xcc_db/giftcard.db') as conn:
+        db = conn.cursor()
+        db.execute("INSERT INTO gc (id, status, plan) VALUES (?, ?, ?)", (gc, 'ACTIVE', 'PREMIUM'))
+        conn.commit()
 
 def insert_plan1(gc):
-  import sqlite3
-  conn = sqlite3.connect('plugins/xcc_db/giftcard.db')
-  db = conn.cursor()
-  db.execute(f"INSERT INTO gc VALUES ('{gc}','ACTIVE','PLAN1')")
-  conn.commit()
-  conn.close()
+    with sqlite3.connect('plugins/xcc_db/giftcard.db') as conn:
+        db = conn.cursor()
+        db.execute("INSERT INTO gc (id, status, plan) VALUES (?, ?, ?)", (gc, 'ACTIVE', 'PLAN1'))
+        conn.commit()
 
 def insert_plan2(gc):
-  import sqlite3
-  conn = sqlite3.connect('plugins/xcc_db/giftcard.db')
-  db = conn.cursor()
-  db.execute(f"INSERT INTO gc VALUES ('{gc}','ACTIVE','PLAN2')")
-  conn.commit()
-  conn.close()
+    with sqlite3.connect('plugins/xcc_db/giftcard.db') as conn:
+        db = conn.cursor()
+        db.execute("INSERT INTO gc (id, status, plan) VALUES (?, ?, ?)", (gc, 'ACTIVE', 'PLAN2'))
+        conn.commit()
 
 def insert_plan3(gc):
-  import sqlite3
-  conn = sqlite3.connect('plugins/xcc_db/giftcard.db')
-  db = conn.cursor()
-  db.execute(f"INSERT INTO gc VALUES ('{gc}','ACTIVE','PLAN3')")
-  conn.commit()
-  conn.close()
+    with sqlite3.connect('plugins/xcc_db/giftcard.db') as conn:
+        db = conn.cursor()
+        db.execute("INSERT INTO gc (id, status, plan) VALUES (?, ?, ?)", (gc, 'ACTIVE', 'PLAN3'))
+        conn.commit()
 
-# fetch info from userid
+# Fetch info from gc
 def getgc(gc):
-  import sqlite3
-  conn = sqlite3.connect('plugins/xcc_db/giftcard.db')
-  db = conn.cursor()
-  db.execute(f"SELECT * FROM gc WHERE id='{gc}'")
-  info = db.fetchone()
-  conn.commit()
-  conn.close()
-  return info
+    with sqlite3.connect('plugins/xcc_db/giftcard.db') as conn:
+        db = conn.cursor()
+        db.execute("SELECT * FROM gc WHERE id=?", (gc,))
+        info = db.fetchone()
+        return info
 
-# fetch all info from table
+# Fetch all info from table
 def getallgc():
-  import sqlite3
-  conn = sqlite3.connect('plugins/xcc_db/giftcard.db')
-  db = conn.cursor()
-  db.execute(f"SELECT * FROM gc")
-  info = db.fetchall()
-  conn.commit()
-  conn.close()
-  return info
+    with sqlite3.connect('plugins/xcc_db/giftcard.db') as conn:
+        db = conn.cursor()
+        db.execute("SELECT * FROM gc")
+        info = db.fetchall()
+        return info
 
-#UPDATE DATA FROM TABLE
+# Update data in the table
 def updategc(gc):
-  import sqlite3
-  conn = sqlite3.connect('plugins/xcc_db/giftcard.db')
-  c = conn.cursor()
-  c.execute(f"UPDATE gc SET status='USED' WHERE id='{gc}'")
-  conn.commit()
-  conn.close()
-
-
+    with sqlite3.connect('plugins/xcc_db/giftcard.db') as conn:
+        db = conn.cursor()
+        db.execute("UPDATE gc SET status='USED' WHERE id=?", (gc,))
+        conn.commit()
+      
