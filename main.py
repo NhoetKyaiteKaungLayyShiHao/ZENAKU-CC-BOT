@@ -60,11 +60,11 @@ async def main():
         role = status
         GROUP = open("plugins/group.txt").read().splitlines()
         if chat_type == "ChatType.PRIVATE" and status == "FREE":
-          resp = "𝗢𝗡𝗟𝗬 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗠𝗘𝗠𝗕𝗘𝗥𝗦 𝗔𝗥𝗘 𝗔𝗟𝗟𝗢𝗪𝗘𝗗 𝗧𝗢 𝗨𝗦𝗘 𝗕𝗢𝗧 𝗜𝗡 𝗣𝗘𝗥𝗦𝗢𝗡𝗔𝗟 ⚠️.𝗬𝗢𝗨 𝗖𝗔𝗡 𝗨𝗦𝗘 𝗙𝗥𝗘𝗘𝗟𝗬 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘 @iam_daxx"
+          resp = "𝗢𝗡𝗟𝗬 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗠𝗘𝗠𝗕𝗘𝗥𝗦 𝗔𝗥𝗘 𝗔𝗟𝗟𝗢𝗪𝗘𝗗 𝗧𝗢 𝗨𝗦𝗘 𝗕𝗢𝗧 𝗜𝗡 𝗣𝗘𝗥𝗦𝗢𝗡𝗔𝗟 ⚠️.𝗬𝗢𝗨 𝗖𝗔𝗡 𝗨𝗦𝗘 𝗙𝗥𝗘𝗘𝗟𝗬 𝗕𝗢𝗧 𝗛𝗘𝗥𝗘 @gitwizardbypass"
           await message.reply_text(resp, message.id)
 
         elif chat_type == "ChatType.GROUP" or chat_type == "ChatType.SUPERGROUP" and chat_id not in GROUP:
-          resp = "𝗨𝗡𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗 𝗖𝗛𝗔𝗧 ❌. 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 @iam_daxx 𝗧𝗢 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘."
+          resp = "𝗨𝗡𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘𝗗 𝗖𝗛𝗔𝗧 ❌. 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 @gitwizardbypass 𝗧𝗢 𝗔𝗨𝗧𝗛𝗢𝗥𝗜𝗭𝗘."
           await message.reply_text(resp, message.id)
         else:
           #CREDIT CHECK
@@ -149,7 +149,7 @@ async def main():
 ● 𝗖𝗖 𝗙𝗼𝘂𝗻𝗱: {cc_found}
 ● 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗲 𝗥𝗲𝗺𝗼𝘃𝗲𝗱: {dublicate}
 ● 𝗦𝗰𝗿𝗮𝗽𝗲𝗱 𝗕𝘆: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {status} ]
-● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=6664582540">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™</a>
+● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=7427691214">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™</a>
 """
                   document = file_name
                   scr_done = await message.reply_document(
@@ -222,7 +222,7 @@ async def main():
 ● 𝗖𝗖 𝗙𝗼𝘂𝗻𝗱: {cc_found}
 ● 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗲 𝗥𝗲𝗺𝗼𝘃𝗲𝗱: {dublicate}
 ● 𝗦𝗰𝗿𝗮𝗽𝗲𝗱 𝗕𝘆: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {status} ]
-● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=6664582540">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™ 👑</a>
+● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=7427691214">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™ 👑</a>
 """
                       document = file_name
                       scr_done = await message.reply_document(
@@ -298,7 +298,7 @@ async def main():
 ● 𝗖𝗖 𝗙𝗼𝘂𝗻𝗱: {cc_found}
 ● 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗲 𝗥𝗲𝗺𝗼𝘃𝗲𝗱: {dublicate}
 ● 𝗦𝗰𝗿𝗮𝗽𝗲𝗱 𝗕𝘆: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {status} ]
-● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=6664582540">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™👑</a>
+● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=7427691214">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™👑</a>
 """
                   document = file_name
                   scr_done = await message.reply_document(

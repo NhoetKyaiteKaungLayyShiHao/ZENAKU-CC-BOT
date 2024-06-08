@@ -7,7 +7,7 @@ from datetime import date, timedelta
 @Client.on_message(filters.command('plan1'))
 async def cmd_plan1(Client, message):
     user_id = str(message.from_user.id)
-    CEO = "6664582540"
+    CEO = "7427691214"
     if user_id != CEO:
         resp = "𝗥𝗲𝗾𝘂𝗶𝗿𝗲 𝗢𝘄𝗻𝗲𝗿 𝗣𝗿𝗶𝘃𝗶𝗹𝗮𝗴𝗲𝘀 ⚠️"
         await message.reply_text(resp, message_id=message.message_id)
@@ -60,7 +60,7 @@ async def cmd_plan1(Client, message):
 𝙏𝙝𝙞𝙨 𝙞𝙨 𝙖 𝙧𝙚𝙘𝙚𝙞𝙥𝙩 𝙛𝙤𝙧 𝙮𝙤𝙪𝙧 𝙥𝙡𝙖𝙣.𝙎𝙖𝙫𝙚𝙙 𝙞𝙩 𝙞𝙣 𝙖 𝙎𝙚𝙘𝙪𝙧𝙚 𝙋𝙡𝙖𝙘𝙚.𝙏𝙝𝙞𝙨 𝙬𝙞𝙡𝙡 𝙝𝙚𝙡𝙥 𝙮𝙤𝙪 𝙞𝙛 𝙖𝙣𝙮𝙩𝙝𝙞𝙣𝙜 𝙜𝙤𝙚𝙨 𝙬𝙧𝙤𝙣𝙜 𝙬𝙞𝙩𝙝 𝙮𝙤𝙪𝙧 𝙥𝙡𝙖𝙣 𝙥𝙪𝙧𝙘𝙝𝙖𝙨𝙚𝙨 .
 
 𝗛𝗮𝘃𝗲 𝗮 𝗚𝗼𝗼𝗱 𝗗𝗮𝘆 .
-- @iam_daxx
+- @gitwizardbypass
                 """
                 await Client.send_message(pmid, user_resp)
         except Exception as e:
