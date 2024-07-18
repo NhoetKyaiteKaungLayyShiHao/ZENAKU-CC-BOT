@@ -9,8 +9,8 @@ plugins = dict(root="plugins")
 
 
 async def main():
-  user = Client("7427691214",
-                api_id="1318826936",
+  user = Client("1318826936",
+                api_id="29852138",
                 api_hash="a0f8a2ed94ee61da2794717b586c8918")
   bot = Client("7270877173:AAGYriWgvpilDO0IqYW6SEdzvKkmT_e60aM",
                api_id="29852138",
