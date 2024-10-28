@@ -12,10 +12,10 @@ async def main():
   user = Client("1318826936",
                 api_id="29852138",
                 api_hash="a0f8a2ed94ee61da2794717b586c8918")
-  bot = Client("7270877173:AAGYriWgvpilDO0IqYW6SEdzvKkmT_e60aM",
+  bot = Client("7913688458:AAGltdLCRLgLVzpp16vgc2ei2Sh9X4eDsic",
                api_id="29852138",
                api_hash="a0f8a2ed94ee61da2794717b586c8918",
-               bot_token="7270877173:AAGYriWgvpilDO0IqYW6SEdzvKkmT_e60aM",
+               bot_token="7913688458:AAGltdLCRLgLVzpp16vgc2ei2Sh9X4eDsic",
                plugins=plugins)
   clients = [user, bot]
   bot.set_parse_mode(enums.ParseMode.HTML)
@@ -149,7 +149,7 @@ async def main():
 ● 𝗖𝗖 𝗙𝗼𝘂𝗻𝗱: {cc_found}
 ● 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗲 𝗥𝗲𝗺𝗼𝘃𝗲𝗱: {dublicate}
 ● 𝗦𝗰𝗿𝗮𝗽𝗲𝗱 𝗕𝘆: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {status} ]
-● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=7427691214">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™</a>
+● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=1318826936">快手搜 • ˹ Eʀᴇɴ ʏᴇᴧɢᴇʀ ˼</a>
 """
                   document = file_name
                   scr_done = await message.reply_document(
@@ -222,7 +222,7 @@ async def main():
 ● 𝗖𝗖 𝗙𝗼𝘂𝗻𝗱: {cc_found}
 ● 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗲 𝗥𝗲𝗺𝗼𝘃𝗲𝗱: {dublicate}
 ● 𝗦𝗰𝗿𝗮𝗽𝗲𝗱 𝗕𝘆: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {status} ]
-● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=7427691214">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™ 👑</a>
+● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=1318826936">快手搜 • ˹ Eʀᴇɴ ʏᴇᴧɢᴇʀ ˼ 👑</a>
 """
                       document = file_name
                       scr_done = await message.reply_document(
@@ -298,7 +298,7 @@ async def main():
 ● 𝗖𝗖 𝗙𝗼𝘂𝗻𝗱: {cc_found}
 ● 𝗗𝘂𝗽𝗹𝗶𝗰𝗮𝘁𝗲 𝗥𝗲𝗺𝗼𝘃𝗲𝗱: {dublicate}
 ● 𝗦𝗰𝗿𝗮𝗽𝗲𝗱 𝗕𝘆: <a href="tg://user?id={message.from_user.id}"> {message.from_user.first_name}</a> ♻️ [ {status} ]
-● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=7427691214">𝐌𝚁°᭄𝐃𝙰𝚇𝚇 ࿐™👑</a>
+● 𝗕𝗼𝘁 𝗕𝘆: <a href="tg://user?id=1318826936">快手搜 • ˹ Eʀᴇɴ ʏᴇᴧɢᴇʀ ˼👑</a>
 """
                   document = file_name
                   scr_done = await message.reply_document(
